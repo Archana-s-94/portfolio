@@ -1,0 +1,60 @@
+#about{
+    background-color: #f8fafc;
+    color: #0F172A;
+    /* padding: 0 20rem;  */
+    padding: 3rem 1rem;
+    margin:0 auto;
+    text-align: center;
+    margin-top: 1rem;
+}
+.aboutContent{
+    /* padding: 35px 0; */
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.aboutTitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#38BDF8;
+}
+.aboutDesc{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 75rem;
+
+}
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 0 2rem;
+    }
+
+    .aboutTitle {
+        font-size: 2rem;
+    }
+
+    .aboutDesc {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+@media screen and (max-width: 480px) {
+    #about {
+        padding: 0 1rem;
+    }
+
+    .aboutContent {
+        padding: 25px 0;
+    }
+
+    .aboutTitle {
+        font-size: 1.8rem;
+    }
+
+    .aboutDesc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+}

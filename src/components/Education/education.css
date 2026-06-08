@@ -1,0 +1,115 @@
+#education{
+    padding: 60px 20px;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#education h2{
+    text-align: center;
+    color: #CBD5E1;
+    padding-bottom: 40px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card{
+    background: #172139;
+    height: 30vh;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.card h3{
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+.card h4{
+    margin-bottom: 10px;
+    color: #94A3B8;
+    font-size: 0.9rem;
+}
+.card p{
+    font-size: 0.9rem;
+    color: #CBD5E1;
+    line-height: 1.5;
+} 
+@media screen and (max-width: 768px) {
+
+    #education {
+        padding: 50px 15px;
+    }
+
+    #education h2 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .card {
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card h4 {
+        font-size: 0.95rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    #education {
+        padding: 40px 10px;
+    }
+
+    #education h2 {
+        font-size: 1.8rem;
+        padding-bottom: 25px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        min-height: 200px;
+        padding: 18px;
+    }
+
+    .card h3 {
+        font-size: 1.15rem;
+    }
+
+    .card h4 {
+        font-size: 0.9rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}

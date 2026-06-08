@@ -1,0 +1,112 @@
+/* SECTION */
+#projects {
+  padding: 60px 20px;
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  /* /* margin-bottom: 40px;  */
+  /* letter-spacing: 1px; */
+}
+.tech-stack{
+    text-align: left;
+    margin-left: 150px;
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+}
+
+
+/* GRID CONTAINER */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 40px; 
+}
+
+/* CARD */
+.project-card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* hover effect */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* TITLE */
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #38bdf8;
+}
+
+/* DESCRIPTION */
+.project-card p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* LINKS */
+.project-card a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 30px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: 0.3s ease; 
+}
+
+/* WEBSITE BUTTON */
+.project-card a[href*="http"]:not([href*="github"]) {
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.project-card a[href*="http"]:not([href*="github"]):hover {
+  background: #0ea5e9;
+}
+
+/* GITHUB BUTTON */
+.project-card a[href*="github"] {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.project-card a[href*="github"]:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 16px;
+  }
+}
